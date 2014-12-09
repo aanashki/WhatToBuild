@@ -1,0 +1,24 @@
+body {
+	font-family: 'Bree Serif', serif;
+	text-align: center;
+}
+h1 {
+	font-size: 100px;
+	margin: 0 0;
+}
+input {
+	margin-top: 10vw;
+	margin-bottom: 10px;
+	font-family: 'Bree Serif', serif;
+}
+
+div.champion {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.caption {
+    display: block;
+}
