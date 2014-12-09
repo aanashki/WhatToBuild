@@ -4,32 +4,65 @@
 	<meta name="author" content="Aaron Nozaki" />
 	<title>WhatToBuild</title>
 	<link rel="stylesheet" type="text/css" href="homepage.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<input placeholder="Search Me" id="box" type="text" /> 
+	<h1>What to Build</h1>
+	<input placeholder="Type a Character" id="box" type="text" /> 
 
-	<ul class="navList">
-		<img src="img/Braum.png" title="Braum">apples</img>
-		<img src="img/Corki.png" title="Corki">apricots</img>
-		<img src="img/Galio.png" title="Galio">acai</img>
-		<img src="img/Gragas.png" title="Gragas">blueberry</img>
-		<img src="img/Heimerdinger.png" title="Heimerdinger">bananas</img>
-		<img src="img/Kalista.png" title="Kalista">cherry</img>
-		<img src="img/Morgana.png" title="Morgana">coconut</img>
-		<img src="img/Ryze.png" title="Ryze">donut</img>
-		<img src="img/Skarner.png" title="Skarner">durean</img>
-		<img src="img/XinZhao.png" title="XinZhao">durean</img>
-	</ul>
+	<div class="navList">
+		<div class="champion"/>
+			<img src="img/Braum.png" title="Braum"/>
+			<span class="caption">Braum</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Corki.png" title="Corki"/>
+			<span class="caption">Corki</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Galio.png" title="Galio"/>
+			<span class="caption">Galio</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Gragas.png" title="Gragas"/>
+			<span class="caption">Gragas</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Heimerdinger.png" title="Heimerdinger"/>
+			<span class="caption">Heimerdinger</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Kalista.png" title="Kalista"/>
+			<span class="caption">Kalista</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Morgana.png" title="Morgana"/>
+			<span class="caption">Morgana</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Ryze.png" title="Ryze"/>
+			<span class="caption">Ryze</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/Skarner.png" title="Skarner"/>
+			<span class="caption">Skarner</span>
+		</div>
+		<div class="champion"/>
+			<img src="img/XinZhao.png" title="Xin Zhao"/>
+			<span class="caption">Xin Zhao</span>
+		</div>
+	</div>
 
 	<!-- Add jQuery library -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
+		document.getElementById('box').focus();
 		$('#box').keyup(function(){
 			var valThis = $(this).val().toLowerCase();
-			$('.navList>img').each(function(){
+			$('.navList>div').each(function(){
 				// $(this).state == on ? $(this).hide() : $(this).show();
-				var text = $(this).attr('title').toLowerCase();
-				(text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+				var text = $(this).children(0).attr('title').toLowerCase();
+				(text.indexOf(valThis) > -1) ? $(this).show() : $(this).hide();            
 			});
 		});
 	</script>
