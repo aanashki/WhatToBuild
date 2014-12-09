@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Aaron Nozaki" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css-js/stylesheet.css"/>
+</head>
+<body>
+	<input placeholder="Search Me" id="box" type="text" /> 
+
+	<ul class="navList">
+		<li>apples</li>
+		<li>apricots</li>
+		<li>acai</li>
+		<li>blueberry</li>
+		<li>bananas</li>
+		<li>cherry</li>
+		<li>coconut</li>
+		<li>donut</li>
+		<li>durean</li>
+	</ul>
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$('#box').keyup(function(){
+			var valThis = $(this).val().toLowerCase();
+			$('.navList>li').each(function(){
+				var text = $(this).text().toLowerCase();
+				(text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+			});
+		});
+	</script>
+</body>
