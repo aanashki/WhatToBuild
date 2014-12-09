@@ -3,21 +3,22 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Aaron Nozaki" />
 	<title>WhatToBuild</title>
-	<link rel="stylesheet" type="text/css" href="css-js/stylesheet.css"/>
+	<link rel="stylesheet" type="text/css" href="homepage.css"/>
 </head>
 <body>
 	<input placeholder="Search Me" id="box" type="text" /> 
 
 	<ul class="navList">
-		<li>apples</li>
-		<li>apricots</li>
-		<li>acai</li>
-		<li>blueberry</li>
-		<li>bananas</li>
-		<li>cherry</li>
-		<li>coconut</li>
-		<li>donut</li>
-		<li>durean</li>
+		<img src="img/Braum.png" title="Braum">apples</img>
+		<img src="img/Corki.png" title="Corki">apricots</img>
+		<img src="img/Galio.png" title="Galio">acai</img>
+		<img src="img/Gragas.png" title="Gragas">blueberry</img>
+		<img src="img/Heimerdinger.png" title="Heimerdinger">bananas</img>
+		<img src="img/Kalista.png" title="Kalista">cherry</img>
+		<img src="img/Morgana.png" title="Morgana">coconut</img>
+		<img src="img/Ryze.png" title="Ryze">donut</img>
+		<img src="img/Skarner.png" title="Skarner">durean</img>
+		<img src="img/XinZhao.png" title="XinZhao">durean</img>
 	</ul>
 
 	<!-- Add jQuery library -->
@@ -25,8 +26,9 @@
 	<script>
 		$('#box').keyup(function(){
 			var valThis = $(this).val().toLowerCase();
-			$('.navList>li').each(function(){
-				var text = $(this).text().toLowerCase();
+			$('.navList>img').each(function(){
+				// $(this).state == on ? $(this).hide() : $(this).show();
+				var text = $(this).attr('title').toLowerCase();
 				(text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
 			});
 		});
