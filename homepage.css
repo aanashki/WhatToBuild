@@ -3,20 +3,23 @@ body {
 	text-align: center;
 }
 h1 {
-	font-size: 10vw;
+	font-size: 7vw;
 	margin: 0 0;
 }
 input {
-	margin-top: 5vw;
+	margin-top: 3vw;
 	margin-bottom: 10px;
-	width: 50vw;
-	height: 5vw;
-	font-size: 4vw;
+	width: 40vw;
+	height: 4vw;
+	font-size: 3vw;
 	font-family: 'Bree Serif', serif;
 	text-align: center;
 }
 table {
 	font-size: 2.5vw;
+}
+.nav {
+	display: inline-block;
 }
 
 div.champion {
