@@ -27,6 +27,7 @@ div.champion {
     display: inline-block;
     text-align: center;
     width: 120px;
+    margin-bottom: 20px;
 }
 
 .caption {
