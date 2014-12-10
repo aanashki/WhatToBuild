@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Aaron Nozaki" />
+	<title>WhatToBuild</title>
+	<link rel="stylesheet" type="text/css" href="homepage.css"/>
+	<link href='css/bree-serif.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>What to Build</h1>
+	<input placeholder="Type a Summoner Name" id="box" type="text" /> 
+
+	<table align="center">
+		<tr>
+			<th>Rank</th>
+			<th>Summoner Name</th>
+		</tr>
+		<tr class='player' title='Turtle The Cat'/>
+			<td>1</td>
+			<td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Turtle The Cat</a></td>
+		</tr>
+	</table>
+
+			<!-- Add jQuery library -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script>
+		document.getElementById('box').focus();
+		$('#box').keyup(function(){
+			var valThis = $(this).val().toLowerCase();
+			$('.player').each(function(){
+				// $(this).state == on ? $(this).hide() : $(this).show();
+				var text = $(this).attr('title').toLowerCase();
+				(text.indexOf(valThis) > -1) ? $(this).show() : $(this).hide();            
+			});
+		});
+	</script>
+</body>
