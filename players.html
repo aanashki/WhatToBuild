@@ -14,7 +14,7 @@
 	<div>
 	<input placeholder="Type a Summoner Name" id="box" type="text" /> 
 
-	<table align="center">
+	<table align="center" cellspacing='0'>
 		<tr>
 			<th>Rank</th>
 			<th>Summoner Name</th>
@@ -833,6 +833,15 @@
 				(text.indexOf(valThis) > -1) ? $(this).show() : $(this).hide();            
 			});
 		});
+		$(function() {
+		  $('.nav a').each(function() {
+		  	console.log ($(this).attr('href'));
+		  	console.log (window.location.pathname);
+		    if (window.location.pathname.indexOf($(this).attr('href')) > -1) {
+		      $(this).addClass('currentnav');
+		    }
+		  });
+		});  
 	</script>
 </body>
 
