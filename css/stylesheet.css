@@ -1,0 +1,16 @@
+body {
+	background: #111;
+	color: #999;
+}
+
+a {
+	text-decoration: none;
+}
+
+.pageHead {
+	display: inline-block;
+}
+
+.pageHead h1 {
+	
+}
