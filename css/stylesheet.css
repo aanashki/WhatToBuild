@@ -5,6 +5,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #333;
 }
 
 .pageHead {
@@ -48,6 +49,19 @@ a {
 }
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
+}
+
+.nav {
+	font-size: 3vw;
+	margin: 0 3vw 3vw 0;
+}
+
+.nav:hover {
+	text-decoration: overline;
+}
+
+.currentnav {
+	text-decoration: overline;
 }
 
 /* latin-ext */
