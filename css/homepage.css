@@ -2,10 +2,6 @@ body {
 	font-family: 'Bree Serif', serif;
 	text-align: center;
 }
-h1 {
-	font-size: 7vw;
-	margin: 0 0;
-}
 input {
 	margin-bottom: 10px;
 	width: 40vw;
@@ -24,9 +20,6 @@ table a:hover {
 }
 td, th {
 	width: 18vw;
-	display: inline-block;
-}
-.nav {
 	display: inline-block;
 }
 
