@@ -8,7 +8,8 @@ $(function() {
   	console.log ($(this).attr('href'));
   	console.log (window.location.pathname);
   	console.log (window.location.pathname.indexOf('.html') > -1);
-    if (window.location.pathname.indexOf($(this).attr('href'))  > -1 || window.location.pathname.indexOf('.html') == -1) {
+    if (window.location.pathname.indexOf($(this).attr('href'))  > -1 ||
+    	(window.location.pathname.indexOf('.html') == -1 && $(this).attr('href') == 'index.html')) {
       $(this).addClass('currentnav');
     }
   });
