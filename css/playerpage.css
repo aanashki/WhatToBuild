@@ -1,0 +1,27 @@
+body {
+	font-family: 'Bree Serif', serif;
+}
+.center-align {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.left {
+    text-align: left;
+}
+.floatimg {
+    float: left;
+    padding: 20px;
+}
+.playername {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.championname {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.runes {
+    padding-top: 50px;
+    padding-bottom: 175px;
+}
