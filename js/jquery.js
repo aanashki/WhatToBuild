@@ -5,11 +5,12 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 $(function() {
   $('.nav a').each(function() {
-  	console.log ($(this).attr('href'));
-  	console.log (window.location.pathname);
+  	link = $(this).attr('href');
+  	curr = window.location.pathname;
   	console.log (window.location.pathname.indexOf('.html') > -1);
-    if (window.location.pathname.indexOf($(this).attr('href'))  > -1 ||
-    	(window.location.pathname.indexOf('.html') == -1 && $(this).attr('href') == 'index.html')) {
+    if ((curr.indexOf('player') > -1 && link == 'players.html') ||
+    	(curr.indexOf('char') > -1  || curr.indexOf('index') > -1 || curr.indexOf('.html') == -1)
+    		&& link == 'index.html') {
       $(this).addClass('currentnav');
     }
   });
