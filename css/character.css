@@ -1,0 +1,58 @@
+.pageHead {
+	display: inline-block;
+}
+
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 10px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #333; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px;
+  padding-top: 40px;
+  margin-top: 20px;
+  position: relative;
+  left: 1px; 	
+}
+
+.tab label img {
+	position: relative;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.tab label p {
+	margin: 0 -5px;
+	display: inline;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 0px;
+  border: 1px solid #ccc; 
+  border-left: 0;
+  visibility: hidden;
+}
+[type=radio]:checked ~ label {
+  background: #555;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  visibility: visible;
+  z-index: 2;
+}
