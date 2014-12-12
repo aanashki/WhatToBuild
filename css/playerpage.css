@@ -25,3 +25,20 @@ body {
     padding-top: 50px;
     padding-bottom: 175px;
 }
+dl  {
+    float: left;
+}
+dt,
+dd {
+    width: 5.5em;
+    float: left;
+}
+dt {
+    margin-bottom: 4em;   
+}
+dd {
+    margin:75px 0 0 -5.5em;
+}
+.offset {
+    margin-top: 200px;   
+}
