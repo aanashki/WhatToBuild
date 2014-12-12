@@ -42,3 +42,15 @@ dd {
 .offset {
     margin-top: 200px;   
 }
+.buildorder {
+    width: 48px;
+    height: 48px;
+}
+.arrow {
+    position: relative; top: -15px;      
+}
+.skillorder {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+}   
