@@ -37,12 +37,17 @@ a {
 	height: 40px;
 	margin-left: 10px;
 }
+
+.tab label p {
+	margin-right: -10px;
+	display: inline;
+}
 .tab [type=radio] {
   display: none;
 }
 .content {
   position: absolute;
-  top: 28px;
+  top: 68px;
   left: 0;
   background: white;
   right: 0;
