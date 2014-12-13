@@ -82,3 +82,13 @@ dd {
     border-bottom-color: white;
     border-bottom-width: thin;
 }
+.item {
+    border-style: inset;
+    border-color: white;
+    border-width: medium;
+}
+.buildorder {
+    border-style: inset;
+    border-color: white;
+    border-width: medium;
+}
