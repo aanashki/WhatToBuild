@@ -81,6 +81,7 @@ dd {
     border-bottom-style: solid;
     border-bottom-color: white;
     border-bottom-width: thin;
+    width: 50%;
 }
 .item {
     border-style: inset;

@@ -40,6 +40,13 @@ h1 {
 	text-decoration: overline;
 }
 
+footer {
+	border-top-style: solid;
+	border-top-color: #999;
+	border-top-width: thin;
+	font-size: 1.3vw;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Bree Serif';
