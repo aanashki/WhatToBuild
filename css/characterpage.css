@@ -84,6 +84,14 @@ dd {
 	margin-right: 73px;
 	width: 100px;
 }
+
+.startRateRed {
+	font-size: 20px;
+	color: red;
+	margin-left: 70px;
+	margin-right: 73px;
+	width: 100px;
+}
 .offset {
     margin-top: 200px;   
 }
