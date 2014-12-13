@@ -27,33 +27,7 @@
             
             <h2 class="headingtitle">Most Played Characters</h2>
             
-            <div id="graphDiv1" class="left"></div>
-            <script src="js/html5-canvas-bar-graph.js"></script>
-            <script>(function () 
-                     {function createCanvas(divName) {
-                         var div = document.getElementById(divName);
-                         var canvas = document.createElement('canvas');
-                         div.appendChild(canvas);
-                         if (typeof G_vmlCanvasManager != 'undefined') {
-                             canvas = G_vmlCanvasManager.initElement(canvas);
-                         }	
-                         var ctx = canvas.getContext("2d");
-                         return ctx;
-                     }
-                      var ctx = createCanvas("graphDiv1");
-                      var graph = new BarGraph(ctx);
-                      graph.maxValue = 50;
-                      graph.margin = 2;
-                      graph.width = 500;
-                      graph.height = 300;
-                      graph.backgroundColor = "#999999";
-                      graph.colors = ["#49a0d8", "#d353a0", "#ffc527", "#df4c27"];
-                      graph.xAxisLabelArr = ["Lucian", "Corki", "Twitch", "Vayne", "Caitlin"];
-                      setInterval(function () {
-                          graph.update([30, 30, 30, 30, 30]);
-                      }, 1000);
-                     }());
-            </script>
+
             
             <h2 class="headingtitle">Most Recent Game</h2>
             <div class="left">
