@@ -6,8 +6,31 @@ body {
     margin-right: auto;
     width: 70%;
 }
+
+.center-align h1 {
+	color: gold;
+	font-size: 40px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+img.header {
+	padding: 0;
+	margin-top: -10px;
+	margin-bottom: -30px;
+}
+
 .left {
     text-align: left;
+}
+.right {
+	text-align: right;
+	float: right;
+	margin-top: -252px;
+}
+.right img {
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 .floatimg {
     float: left;
@@ -25,6 +48,10 @@ body {
 dl  {
     float: left;
 	display: inline-block;
+}
+
+dl.row2 {
+	margin-top: -10px;
 }
 dt,
 dd {
@@ -80,6 +107,11 @@ dt.rate {
 }
 .red {
 	color: red;
+}
+.item {
+	border-style: inset;
+	border-color: white;
+	border-width: medium;
 }
 .headingtitle {
     border-bottom-style: solid;
