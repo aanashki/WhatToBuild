@@ -17,6 +17,9 @@ body {
     padding-top: 35px;
     padding-bottom: 35px;
 }
+.playernamesize {
+    font-size: 175%;   
+}
 .championname {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -54,3 +57,28 @@ dd {
     width: 50%;
     font-size: 20px;
 }   
+.active {
+    color: #00FF00; 
+}
+.gold {
+    color: #FFD700;   
+}
+.silver {
+    color: #C0C0C0;
+}
+.bronze {
+    color: #CD7F32;
+}   
+.ult {
+    color: #0000FF;   
+}
+.headingtitle {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: medium;    
+}
+.title {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+}

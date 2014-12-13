@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
         <link type="text/css" rel="stylesheet" href="css/playerpage.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+        <title>What to Build | Turtle the Cat</title>
     </head>
         
     <body>
@@ -17,32 +17,57 @@
             <div class='nav'><a href='players.html'>Players</a></div>
         </div>
         <div class="center-align">
-            <div class="left">                
+            <div class="center-align">                
                 <img src="img/ProfileIcon1.jpg" class="floatimg" alt=""/>            
                 <h2 class ="playername">
-                    Turtle the Cat<br>
-                    North America<br>
-                    Challenger I
+                    <span class="playernamesize active">Turtle the Cat</span><br>
+                    North America | Challenger I
                 </h2>
             </div>
             
-            <div class="left">
-                <h2>Most Played Champions</h2>
-                <img src="" class="" alt=""/>
-            </div>
+            <h2 class="headingtitle">Most Played Characters</h2>
             
+            <div id="graphDiv1" class="left"></div>
+            <script src="js/html5-canvas-bar-graph.js"></script>
+            <script>(function () 
+                     {function createCanvas(divName) {
+                         var div = document.getElementById(divName);
+                         var canvas = document.createElement('canvas');
+                         div.appendChild(canvas);
+                         if (typeof G_vmlCanvasManager != 'undefined') {
+                             canvas = G_vmlCanvasManager.initElement(canvas);
+                         }	
+                         var ctx = canvas.getContext("2d");
+                         return ctx;
+                     }
+                      var ctx = createCanvas("graphDiv1");
+                      var graph = new BarGraph(ctx);
+                      graph.maxValue = 50;
+                      graph.margin = 2;
+                      graph.width = 500;
+                      graph.height = 300;
+                      graph.backgroundColor = "#999999";
+                      graph.colors = ["#49a0d8", "#d353a0", "#ffc527", "#df4c27"];
+                      graph.xAxisLabelArr = ["Lucian", "Corki", "Twitch", "Vayne", "Caitlin"];
+                      setInterval(function () {
+                          graph.update([30, 30, 30, 30, 30]);
+                      }, 1000);
+                     }());
+            </script>
+            
+            <h2 class="headingtitle">Most Recent Game</h2>
             <div class="left">
-                <h2>Most Recent Game</h2>
+                
                 <img src="img/LucianSquare.png" class="floatimg" alt=""/>
                 <h3 class ="championname">
                     Lucian<br>
-                    Won 2 days ago<br>
+                    <span class="active">Won</span> 2 days ago<br>
                     Ranked Solo Queue
                 </h3>
             </div>
             
             <div class="left">
-                <h3>Items (total gold)</h3>
+                <h3 class="title">Items (<span class="gold">7,539 Gold</span>)</h3>
                 <dl>
                     <dt><img src="img/items/Doran's_Blade_item.png" class="item" alt=""/></dt>
                     <dd>Doran's Blade</dd>
@@ -62,7 +87,7 @@
             </div>
             
             <div class="left offset">
-                <h3>Build Order</h3>
+                <h3 class="title">Build Order</h3>
                 <img src="img/items/Doran's_Blade_item.png" class="buildorder" alt=""/>
                 <img src="img/items/Warding_Totem_item.jpg" class="buildorder" alt=""/>
                 <img src="img/items/Health_Potion_item.png" class="buildorder" alt=""/>
@@ -87,7 +112,7 @@
             </div>
             
             <div class="left">
-                <h3>Skill Order</h3>    
+                <h3 class="title">Skill Order</h3>    
                 <table class="skillorder">
                     <tr>
                         <td>1</td>
@@ -110,36 +135,42 @@
                         <td>18</td>
                     </tr>
                     <tr>
-                        <td>Q</td>
-                        <td>E</td>
-                        <td>Q</td>
-                        <td>W</td>
-                        <td>Q</td>
-                        <td>R</td>
-                        <td>Q</td>
-                        <td>E</td>
-                        <td>Q</td>
-                        <td>E</td>
-                        <td>R</td>
-                        <td>E</td>
+                        <td><span class="gold">Q</span></td>
+                        <td><span class="bronze">E</span></td>
+                        <td><span class="gold">Q</span></td>
+                        <td><span class="silver">W</span></td>
+                        <td><span class="gold">Q</span></td>
+                        <td><span class="ult">R</span></td>
+                        <td><span class="gold">Q</span></td>
+                        <td><span class="bronze">E</span></td>
+                        <td><span class="gold">Q</span></td>
+                        <td><span class="bronze">E</span></td>
+                        <td><span class="ult">R</span></td>
+                        <td><span class="bronze">E</span></td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
                     </tr>
                 </table>
             </div>
             
             <div class="left">
-                <h3>Runes</h3>
+                <h3 class="title">Runes</h3>
                 <img src="img/player1runes.JPG" class="floatimg" alt=""/>
                 <h3 class="runes">
-                    +10.76 Physical Damage<br><br>
-                    +72.00 Health<br><br>
-                    +7.05% Attack Speed %<br><br>
-                    +6.70 Magic Resist<br><br>
-                    +4.26 Armor<br><br>
+                    <span class="active">+10.76</span> Physical Damage<br><br>
+                    <span class="active">+72.00</span> Health<br><br>
+                    <span class="active">+7.05%</span> Attack Speed %<br><br>
+                    <span class="active">+6.70</span> Magic Resist<br><br>
+                    <span class="active">+4.26</span> Armor<br><br>
                 </h3>
             </div>
             
             <div class="left">
-                <h3>Masteries</h3>
+                <h3 class="title">Masteries</h3>
                 <img src="img/player1masteries.JPG" class="" alt=""/>
             </div>
         </div>

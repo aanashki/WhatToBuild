@@ -20,14 +20,31 @@ input {
 table {
 	font-size: 2vw;
 	text-align: left;
+	color: #999;
 }
-table a:hover {
+table a{
+	color: #999;
+}
+.player:hover {
+	background: #333;
 	font-size: 2.1vw;
+	color: white;
 }
 td, th {
-	width: 18vw;
+	width: 22vw;
 	display: inline-block;
 }
+.lef {
+	width: 8vw;
+}
+.main {
+	width: 4vw;
+}
+.rigt {
+	text-align: right;
+	width: 4vw;
+}
+
 
 div.champion {
     vertical-align: top;
