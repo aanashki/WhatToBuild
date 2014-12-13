@@ -23,14 +23,17 @@ img.header {
 .left {
     text-align: left;
 }
-.right {
+.summoners {
 	text-align: right;
 	float: right;
 	margin-top: -252px;
 }
-.right img {
+.summoners img {
 	margin-top: 10px;
 	margin-bottom: 5px;
+}
+.summoners span {
+	
 }
 .floatimg {
     float: left;
