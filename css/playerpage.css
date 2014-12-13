@@ -93,3 +93,6 @@ dd {
     border-color: white;
     border-width: medium;
 }
+.lost {
+    color: red;   
+}
