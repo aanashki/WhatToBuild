@@ -1,0 +1,53 @@
+body {
+	font-family: 'Bree Serif', serif;
+}
+.center-align {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.left {
+    text-align: left;
+}
+.floatimg {
+    float: left;
+    padding: 20px;
+}
+.charname {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.runes {
+    padding-top: 50px;
+    padding-bottom: 175px;
+}
+dl  {
+    float: left;
+}
+dt,
+dd {
+    width: 5.5em;
+    float: left;
+}
+dt {
+    margin-bottom: 4em;   
+}
+dd {
+    margin:75px 0 0 -5.5em;
+}
+.offset {
+    margin-top: 200px;   
+}
+.buildorder {
+    width: 48px;
+    height: 48px;
+}
+.arrow {
+    position: relative; top: -15px;      
+}
+.skillorder {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+}   
