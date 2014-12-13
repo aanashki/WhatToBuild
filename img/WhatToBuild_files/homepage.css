@@ -1,0 +1,82 @@
+input {
+	outline: none;
+	background: #666;
+	color: #FFF;
+
+    border-radius:         26px;
+    -moz-border-radius:    26px;
+    -o-border-radius:      26px;
+    -webkit-border-radius: 26px;
+
+
+
+	margin-bottom: 10px;
+	width: 40vw;
+	height: 4vw;
+	font-size: 3vw;
+	font-family: 'Bree Serif', serif;
+	text-align: center;
+}
+table {
+	font-size: 2vw;
+	text-align: left;
+	color: #999;
+}
+table a{
+	color: #999;
+}
+.player:hover {
+	background: #333;
+	font-size: 2.1vw;
+	color: white;
+}
+td, th {
+	width: 22vw;
+	display: inline-block;
+}
+.lef {
+	width: 8vw;
+}
+.main {
+	width: 4vw;
+}
+.rigt {
+	text-align: right;
+	width: 4vw;
+}
+
+
+div.champion {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    margin: 2px 0 20px 0;
+}
+
+div.champion:hover {
+	margin: 0 0 20px 0;
+}
+
+.caption {
+    display: block;
+}
+
+div.champion:hover, input {
+	box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	                    0 0 0 rgba(255, 255, 255, 0.5), 
+	                    inset 0 0 2px rgba(0, 0, 0, 0.3), 
+	                    0 0 40px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	                    0 0 0 rgba(255, 255, 255, 0.5), 
+	                    inset 0 0 2px rgba(0, 0, 0, 0.3), 
+	                    0 0 40px rgba(255, 255, 255, 0.3);
+	-o-box-shadow:      inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	                    0 0 0 rgba(255, 255, 255, 0.5), 
+	                    inset 0 0 2px rgba(0, 0, 0, 0.3), 
+	                    0 0 40px rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	                    0 0 0 rgba(255, 255, 255, 0.5), 
+	                    inset 0 0 2px rgba(0, 0, 0, 0.3), 
+	                    0 0 40px rgba(255, 255, 255, 0.3);
+}
