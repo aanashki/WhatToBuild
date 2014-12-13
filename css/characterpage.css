@@ -70,11 +70,18 @@ dd {
     margin:75px 0 0 -5.5em;
 }
 
-dt.rate {
+.rate {
 	font-size: 20px;
 	color: green;
 	margin-left: -15px;
 	margin-top: 15px;
+	width: 100px;
+}
+.startRate {
+	font-size: 20px;
+	color: green;
+	margin-left: 70px;
+	margin-right: 73px;
 	width: 100px;
 }
 .offset {
@@ -127,4 +134,69 @@ dt.rate {
     border-bottom-style: solid;
     border-bottom-color: white;
     border-bottom-width: thin;
+}
+.combo {
+	display: inline;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+/***** TAB FUNCTIONALITY ***/
+.tabs {
+  position: relative;   
+  min-height: 550px; /* This part sucks */
+  clear: both;
+  margin: 10px 0;
+  background-color: inherit;
+}
+
+#runetabs {
+	margin-bottom: -50px;
+}
+
+.tab {
+  float: left;
+}
+.tab label {
+  background: #333; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px;
+  margin-top: 20px;
+  position: relative;
+  left: 1px; 	
+}
+
+.tab label img {
+	position: relative;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.tab label p {
+	margin: 0 -5px;
+	display: inline;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 13px;
+  left: -15px;
+  background: inherit;
+  right: 0;
+  bottom: 0;
+  padding: 0px;
+  border-left: 0;
+  visibility: hidden;
+}
+[type=radio]:checked ~ label {
+  background: #555;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  visibility: visible;
+  z-index: 2;
 }
