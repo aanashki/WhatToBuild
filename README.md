@@ -1,4 +1,4 @@
 WhatToBuild
 ===========
 
-A League of Legends gameplay guide
+A [League of Legends gameplay guide](https://thebugjim.github.io/WhatToBuild/)
